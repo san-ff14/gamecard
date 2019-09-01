@@ -1,0 +1,77 @@
+@import "./variables"
+
+animate(time = .25s)
+  -webkit-transition all time ease
+  -moz-transition all time ease
+  -ms-transition all time ease
+  -o-transition all time ease
+  transition all time ease
+
+flexbox()
+  display flex
+  display -webkit-box
+  display -ms-flexbox
+  display -webkit-flex
+
+justify-content(value)
+  justify-content value
+  -webkit-justify-content value
+  -webkit-box-pack value
+  -ms-flex-pack value
+
+align-items(value)
+  align-items value
+  -webkit-align-items value
+  -webkit-box-align value
+  -ms-flex-align value
+  -webkit-align-items value
+
+flex-direction(value)
+  -webkit-flex-direction value
+  flex-direction value
+
+flex-direction(value)
+  -webkit-box-direction value
+  -webkit-flex-direction value
+  flex-direction value
+
+flex-wrap(value)
+  flex-wrap value
+  -ms-flex-wrap value
+  -webkit-flex-wrap value
+
+max-screen(breakPoint)
+  @media screen and (max-width: breakPoint px)
+    {block}
+
+min-screen(breakPoint)
+  @media screen and (min-width: breakPoint px)
+    {block}
+
+screen(breakPointMin, breakPointMax)
+  @media screen and (min-width: breakPointMin px) and (max-width: breakPointMax px)
+    {block}
+
+noSelect()
+  user-select none
+  -webkit-user-select none
+  -ms-user-select  none
+  -moz-user-select none
+  -khtml-user-select none
+  -webkit-user-drag none
+  -khtml-user-drag none
+
+noScrollbar()
+  &::-webkit-scrollbar
+    width 0
+    display none
+
+overrideScrollbar()
+  &::-webkit-scrollbar
+    width 10px
+  &::-webkit-scrollbar-track
+    border-radius 10px
+  &::-webkit-scrollbar-thumb
+    background-color rgba(0, 0, 50, .5)
+    border-radius 10px
+    box-shadow 0 0 0 1px rgba(255, 255, 255, .3)
