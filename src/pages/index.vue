@@ -1,9 +1,12 @@
 <template lang="pug">
   .container
-    h1.site-title
-      span.ff14 FINAL FANTASY XIV
-      br
-      span Game Card Generator β 1.0.1
+    
+    header
+      h1.site-title
+        span.ff14 FINAL FANTASY XIV
+        br
+        span Game Card Generator β 1.0.2
+      p.guideline 本サイトはファイナルファンタジーXIVのゲーム内で撮影したスクリーンショットをゲームカード風に加工する画像ジェネレーターです。「<a href="https://support.jp.square-enix.com/rule.php?id=5381&la=0&tag=authc" target="_blank">ファイナルファンタジーXIV 著作物利用許諾条件</a>」に同意した上でご利用ください。
     p.copy-right 記載されている会社名・製品名・システム名などは、各社の商標、または登録商標です。<br>Copyright (C) 2010 - 2019 SQUARE ENIX CO., LTD. All Rights Reserved.
 
     main
@@ -54,7 +57,7 @@
               :scale="params[selectedTemplate].scale")
       
       .input-parameters
-        h2.aside-title CUSTOMIZE
+        //- h2.aside-title CUSTOMIZE
         .inner
           .step
             h2.step-title 1. Input Image
@@ -223,30 +226,31 @@
     height 100vh
     // background-color #222
   header
-    height 40px
-    flex-shrink 0
-    display flex
-    align-items center
-    justify-content center
-    border-bottom 2px solid #222
-  .site-title
     position fixed 
     top 20px
     left 20px
     z-index 5000
-    font-size 14px
+  .site-title
+    font-size 20px
     font-weight bold
     line-height 1.2em
+    margin-bottom 10px
     color #000
-    margin-bottom 30px
-    // .ff14
-    //   letter-spacing 0.8px
+  .guideline
+    width 240px
+    font-size 10px
+    line-height 1.6em
+    text-align justify
+    a
+      text-decoration underline
   .copy-right
-    position fixed 
+    position fixed
+    line-height 1.4em
     bottom 20px
     left 20px
     z-index 5000
     font-size 10px
+    margin-top 10px
   main
     position relative
     width 100%
@@ -271,8 +275,7 @@
     display flex
     align-items center
     justify-content center
-    // background-color #CFCDCF
-    background-color #d8d8d8
+    background-color #CFCDCF
     overflow scroll
   .svg-wrapper
     position relative
@@ -358,8 +361,7 @@
     letter-spacing 1px
     padding 5px 10px
     margin-bottom 20px
-    // background-color #aaa
-    background-color #222
+    background-color #333
     color #f8f8f8
   .step-content
     padding 0 20px
