@@ -401,7 +401,7 @@
 		</g>
 	</g>
 </g>
-<g>
+<!-- <g>
 	
 		<image overflow="visible" opacity="0.7" width="92" height="29" xlink:href="templates/B7A258862253D671.png"  transform="matrix(1 0 0 1 511.3676 45.3297)">
 	</image>
@@ -444,8 +444,8 @@
 			</g>
 		</g>
 	</g>
-</g>
-<g>
+</g> -->
+<!-- <g>
 	
 		<image overflow="visible" opacity="0.7" width="91" height="39" xlink:href="templates/B7A258862253D670.png"  transform="matrix(1 0 0 1 590.3676 38.3297)">
 	</image>
@@ -473,7 +473,7 @@
 			</g>
 		</g>
 	</g>
-</g>
+</g> -->
 </svg>
 
 </template>

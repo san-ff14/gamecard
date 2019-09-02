@@ -5,8 +5,8 @@
       h1.site-title
         span.ff14 FINAL FANTASY XIV
         br
-        span Game Card Generator β 1.0.2
-      p.guideline 本サイトはファイナルファンタジーXIVのゲーム内で撮影したスクリーンショットをゲームカード風に加工する画像ジェネレーターです。「<a href="https://support.jp.square-enix.com/rule.php?id=5381&la=0&tag=authc" target="_blank">ファイナルファンタジーXIV 著作物利用許諾条件</a>」に同意した上でご利用ください。
+        span Game Card Generator β 1.0.3
+      p.guideline 本サイトはファイナルファンタジーXIVのゲーム内で撮影したスクリーンショットをゲームカード風に加工する非公式画像ジェネレーターです。ご利用の際は「<a href="https://support.jp.square-enix.com/rule.php?id=5381&la=0&tag=authc" target="_blank">ファイナルファンタジーXIV 著作物利用許諾条件</a>」に同意した上、規約の範囲内にてご利用ください。
     p.copy-right 記載されている会社名・製品名・システム名などは、各社の商標、または登録商標です。<br>Copyright (C) 2010 - 2019 SQUARE ENIX CO., LTD. All Rights Reserved.
 
     main

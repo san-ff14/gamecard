@@ -185,11 +185,9 @@
 		z"/>
 </g>
 <g>
-	
 		<image overflow="visible" opacity="0.4" width="572" height="183" xlink:href="templates/B799ED796845822F.png"  transform="matrix(1 0 0 1 75.6308 163.3617)">
 	</image>
 	<g>
-		
 		<g>
 			<g>
 				<path fill="#FFFFFF" d="M217.63,274.45c0.05,0.73,0.15,1.15-0.24,1.6c-1.22,0.43-2.64-0.06-4.03,0.3
@@ -407,7 +405,7 @@
 		</g>
 	</g>
 </g>
-<g>
+<!-- <g>
 	
 		<image overflow="visible" opacity="0.7" width="92" height="29" xlink:href="templates/B799ED7968458228.png"  transform="matrix(1 0 0 1 510.6308 45.3297)">
 	</image>
@@ -450,9 +448,9 @@
 			</g>
 		</g>
 	</g>
-</g>
+</g> -->
 <g>
-		<image overflow="visible" opacity="0.7" width="92" height="39" xlink:href="templates/B799ED7968458237.png"  transform="matrix(1 0 0 1 589.6308 38.3297)">
+		<!-- <image overflow="visible" opacity="0.7" width="92" height="39" xlink:href="templates/B799ED7968458237.png"  transform="matrix(1 0 0 1 589.6308 38.3297)">
 	</image>
 	<g>
 		
@@ -476,8 +474,8 @@
 					c-1.28,0-2.42,0.95-2.42,2.39C663.64,53.65,664.77,54.55,666.41,54.55z M666.29,63.24c1.41,0,2.49-1.18,2.49-2.8
 					c0-1.62-0.98-2.8-2.57-2.8c-1.39,0-2.57,1.08-2.57,2.8C663.64,62.03,664.59,63.24,666.29,63.24z"/>
 			</g>
-		</g>
-	</g>
+		</g> -->
+	<!-- </g> -->
 </g>
 </svg>
 
