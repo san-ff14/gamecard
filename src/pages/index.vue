@@ -19,42 +19,48 @@
               :image="uploadedImageData"
               :offsetX="params[selectedTemplate].x"
               :offsetY="params[selectedTemplate].y"
-              :scale="params[selectedTemplate].scale")
+              :scale="params[selectedTemplate].scale"
+              :rotate="params[selectedTemplate].rotate")
             svgTemplate02.svg(
               ref="svg"
               v-if="selectedTemplate==1"
               :image="uploadedImageData"
               :offsetX="params[selectedTemplate].x"
               :offsetY="params[selectedTemplate].y"
-              :scale="params[selectedTemplate].scale")
+              :scale="params[selectedTemplate].scale"
+              :rotate="params[selectedTemplate].rotate")
             svgTemplate03.svg(
               ref="svg"
               v-if="selectedTemplate==2"
               :image="uploadedImageData"
               :offsetX="params[selectedTemplate].x"
               :offsetY="params[selectedTemplate].y"
-              :scale="params[selectedTemplate].scale")
+              :scale="params[selectedTemplate].scale"
+              :rotate="params[selectedTemplate].rotate")
             svgTemplate04.svg(
               ref="svg"
               v-if="selectedTemplate==3"
               :image="uploadedImageData"
               :offsetX="params[selectedTemplate].x"
               :offsetY="params[selectedTemplate].y"
-              :scale="params[selectedTemplate].scale")
+              :scale="params[selectedTemplate].scale"
+              :rotate="params[selectedTemplate].rotate")
             svgTemplate05.svg(
               ref="svg"
               v-if="selectedTemplate==4"
               :image="uploadedImageData"
               :offsetX="params[selectedTemplate].x"
               :offsetY="params[selectedTemplate].y"
-              :scale="params[selectedTemplate].scale")
+              :scale="params[selectedTemplate].scale"
+              :rotate="params[selectedTemplate].rotate")
             svgTemplate06.svg(
               ref="svg"
               v-if="selectedTemplate==5"
               :image="uploadedImageData"
               :offsetX="params[selectedTemplate].x"
               :offsetY="params[selectedTemplate].y"
-              :scale="params[selectedTemplate].scale")
+              :scale="params[selectedTemplate].scale"
+              :rotate="params[selectedTemplate].rotate")
       
       .input-parameters
         //- h2.aside-title CUSTOMIZE
@@ -82,6 +88,7 @@
           .step
             h2.step-title 3. Layout Adjustment
             .step-content.layout-adjust
+              
               .buttons.pos-buttons
                 .buttons-row
                   .button-arrow.arrow-up(@click="posUp")
@@ -95,11 +102,19 @@
                   .button-arrow.arrow-down(@click="posDown")
                     img(src="icons/_ionicons_svg_ios-arrow-down.svg")
               
-              .buttons.zoom-buttons
-                .button-arrow.arrow-up(@click="zoomIn")
+              .buttons.double-buttons
+                .button-arrow.arrow-zoomup(@click="zoomIn")
                   img(src="icons/_ionicons_svg_ios-add.svg")
-                .button-arrow.arrow-down(@click="zoomOut")
+                .button-arrow.arrow-zoomout(@click="zoomOut")
                   img(src="icons/_ionicons_svg_ios-remove.svg")
+              
+              
+              //- .buttons.double-buttons
+                .button-arrow.arrow-rotate-forward(@click="turnRight")
+                  img(src="icons/_ionicons_svg_ios-return-right.svg")
+                .button-arrow.arrow-rotate-backward(@click="turnLeft")
+                  img(src="icons/_ionicons_svg_ios-return-right.svg")
+             
                
               
           .step
@@ -108,7 +123,7 @@
               button.button-download(:disabled="!uploadedImageData" @click="handleDrownload")
                 img.icon(src="icons/_ionicons_svg_ios-download.svg")
                 span Download
-</template>å
+</template>
 <script>
   import { mapState, mapActions, mapGetters } from 'vuex'
   import axios from "axios"
@@ -123,12 +138,12 @@
         uploadedImageData: null,
         selectedTemplate: 0,
         params: [
-          { x: 0, y:0, scale: 1 },
-          { x: 0, y:0, scale: 1 },
-          { x: 0, y:0, scale: 1 },
-          { x: 0, y:0, scale: 1 },
-          { x: 0, y:0, scale: 1 },
-          { x: 0, y:0, scale: 1 },
+          { x: 0, y:0, scale: 1, rotate: 0 },
+          { x: 0, y:0, scale: 1, rotate: 0 },
+          { x: 0, y:0, scale: 1, rotate: 0 },
+          { x: 0, y:0, scale: 1, rotate: 0 },
+          { x: 0, y:0, scale: 1, rotate: 0 },
+          { x: 0, y:0, scale: 1, rotate: 0 },
         ]
       }
     },
@@ -160,13 +175,19 @@
         const canvas = document.createElement("canvas")
         canvas.width = svg.width.baseVal.value
         canvas.height = svg.height.baseVal.value
-        
         canvg(canvas, svgData, {
           renderCallback(){
-            var a = document.createElement("a")
-            a.href = canvas.toDataURL("image/png")
-            a.setAttribute("download", "image.png")
-            a.dispatchEvent(new CustomEvent("click"))
+            if(canvas.msToBlob){
+              var blob = canvas.msToBlob()
+              window.navigator.msSaveBlob(blob, "my_gamecard.png")
+            }else{
+              var a = document.createElement("a")
+              a.href = canvas.toDataURL("image/png")
+              a.setAttribute("download", "my_gamecard.png")
+              // a.dispatchEvent(new CustomEvent("click"))
+              a.click()
+            }
+            
           }
         })
       },
@@ -209,11 +230,21 @@
           this.params[this.selectedTemplate].x -= 10
         }
       },
-       posRight(){
+      posRight(){
         if(this.uploadedImageData){
           this.params[this.selectedTemplate].x += 10
         }
       },
+      turnRight(){
+        if(this.uploadedImageData){
+          this.params[this.selectedTemplate].rotate += 15
+        }
+      },
+      turnLeft(){
+        if(this.uploadedImageData){
+          this.params[this.selectedTemplate].rotate -= 15
+        }
+      }
     }
   }
 </script>
@@ -397,10 +428,11 @@
     display flex
     justify-content center
   .button-arrow
+    position relative
     animate()
     noSelect()
-    height 40px
-    width 40px
+    height 45px
+    width 45px
     border-radius 50%
     background-color #ddd
     display flex
@@ -411,29 +443,45 @@
       position relative
       width 30px
     &.arrow-left
-      margin-right 46px
       img
         left -2px
     &.arrow-right img
       left 2px
     &.arrow-down img
       top 2px
-    &.
-    &:not(:last-child)
-      margin-right 2px
+    &.arrow-rotate-forward img
+      position relative
+      transform rotate(-180deg)
     &:hover
       background-color #ddd
     &:active
       background-color #aaa
-  
+
+
   .layout-adjust
     display flex
     justify-content center
-    .zoom-buttons
-      display flex
-      flex-direction column
-      justify-content center
-      margin-left 20px
-      .arrow-up
-        margin-bottom 20px
+  .pos-buttons
+    margin-right 10px
+    .arrow-up
+      top 10px
+    .arrow-left
+      margin-right 15px
+    .arrow-right
+      margin-left 15px
+    .arrow-down
+      top -10px
+
+  .double-buttons
+    display flex
+    flex-direction column
+    justify-content center
+    &:not(:last-child)
+      margin-right 10px
+    .button-arrow
+      &:first-child
+        border-radius 10px 10px 0 0
+        margin-bottom 2px
+      &:last-child
+        border-radius 0 0 10px 10px
 </style>

@@ -670,11 +670,12 @@
       image:   { type: String, default: null },
       offsetX: { type: Number, default: 0 },
       offsetY: { type: Number, default: 0 },
-      scale:   { type: Number, default: 1 }
+			scale:   { type: Number, default: 1 },
+			rotate:  { type: Number, default: 0 }
     },
     computed: {
       computedTranfrom(){
-        return `translate(${this.offsetX},${this.offsetY}) scale(${this.scale})`
+        return `translate(${this.offsetX},${this.offsetY}) scale(${this.scale}) rotate(${this.rotate})`
       }
     }
   }
