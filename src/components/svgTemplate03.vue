@@ -36,9 +36,10 @@
 				<use xlink:href="#card_15_"  overflow="visible"/>
 			</clipPath>
 			<g clip-path="url(#card_14_)">
-				
+				<g :transform="computedTranfrom">
 					<image overflow="visible" width="3840" height="2160" :xlink:href="image"  transform="matrix(0.2446 0 0 0.2446 -53.5779 277.3069)">
-				</image>
+					</image>
+				</g>
 			</g>
 		</g>
 	</g>
