@@ -203,11 +203,10 @@
 <rect x="622.52" y="72.44" fill="#FFFFFF" width="170" height="46.5"/>
 <g>
 	
-		<image overflow="visible" opacity="0.8" width="430" height="71" xlink:href="templates/B791826CAE372DEC.png"  transform="matrix(1 0 0 1 199.5008 161.6208)">
+		<image overflow="visible" opacity="0.6" width="430" height="71" xlink:href="templates/B791826CAE372DEC.png"  transform="matrix(1 0 0 1 199.5008 161.6208)">
 	</image>
 	<g>
-		
-			<image overflow="visible" opacity="0.6" width="392" height="35" xlink:href="templates/B791826CAE372DED.png"  transform="matrix(1 0 0 1 218.5008 179.6208)">
+			<image overflow="visible" opacity="0.2" width="392" height="35" xlink:href="templates/B791826CAE372DED.png"  transform="matrix(1 0 0 1 218.5008 179.6208)">
 		</image>
 		<g>
 			<g>

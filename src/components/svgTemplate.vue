@@ -573,11 +573,11 @@
 </g>
 <g>
 	
-		<image overflow="visible" opacity="0.8" width="430" height="72" xlink:href="templates/8598E80765D54490.png"  transform="matrix(1 0 0 1 202.6099 154.4105)">
+		<image overflow="visible" opacity="0.6" width="430" height="72" xlink:href="templates/8598E80765D54490.png"  transform="matrix(1 0 0 1 202.6099 154.4105)">
 	</image>
 	<g>
 		
-			<image overflow="visible" opacity="0.6" width="392" height="36" xlink:href="templates/8598E80765D54492.png"  transform="matrix(1 0 0 1 221.6099 172.4105)">
+			<image overflow="visible" opacity="0.4" width="392" height="36" xlink:href="templates/8598E80765D54492.png"  transform="matrix(1 0 0 1 221.6099 172.4105)">
 		</image>
 		<g>
 			<g>
