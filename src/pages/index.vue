@@ -308,6 +308,7 @@
     justify-content center
     background-color #CFCDCF
     overflow scroll
+    noScrollbar()
   .svg-wrapper
     position relative
     width 100%
