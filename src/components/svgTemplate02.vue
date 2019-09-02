@@ -627,11 +627,11 @@
 </g>
 <g>
 	
-		<image overflow="visible" opacity="0.7" width="92" height="39" xlink:href="8807D9B52DF9A1BE.png"  transform="matrix(1 0 0 1 646.5008 342.6208)">
+		<image overflow="visible" opacity="0.7" width="92" height="39" xlink:href="templates/8807D9B52DF9A1BE.png"  transform="matrix(1 0 0 1 646.5008 342.6208)">
 	</image>
 	<g>
 		
-			<image overflow="visible" opacity="0.6" width="79" height="27" xlink:href="8807D9B52DF9A1BA.png"  transform="matrix(1 0 0 1 653.1008 348.2208)">
+			<image overflow="visible" opacity="0.6" width="79" height="27" xlink:href="templates/8807D9B52DF9A1BA.png"  transform="matrix(1 0 0 1 653.1008 348.2208)">
 		</image>
 		<g>
 			<g>
