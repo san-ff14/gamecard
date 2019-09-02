@@ -5,7 +5,7 @@
       h1.site-title
         span.ff14 FINAL FANTASY XIV
         br
-        span Game Card Generator β 1.0.3
+        span Game Card Generator β 1.0.4
       p.guideline 本サイトはファイナルファンタジーXIVのゲーム内で撮影したスクリーンショットをゲームカード風に加工する非公式画像ジェネレーターです。ご利用の際は「<a href="https://support.jp.square-enix.com/rule.php?id=5381&la=0&tag=authc" target="_blank">ファイナルファンタジーXIV 著作物利用許諾条件</a>」に同意した上、規約の範囲内にてご利用ください。
     p.copy-right 記載されている会社名・製品名・システム名などは、各社の商標、または登録商標です。<br>Copyright (C) 2010 - 2019 SQUARE ENIX CO., LTD. All Rights Reserved.
 
@@ -81,7 +81,7 @@
             h2.step-title 2. Select Template
             .step-content
               .input-templates
-                .template-option(v-for="n,i in 6" :class="{select: i==selectedTemplate}" @click="selectedTemplate = i")
+                .template-option(v-for="n,i in 4" :class="{select: i==selectedTemplate}" @click="selectedTemplate = i")
                   .l-square
                     .__content
                       img(:src="`images/template0${n}.svg`")
