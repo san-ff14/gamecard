@@ -2,7 +2,7 @@
   .container
     header
       h1.site-title
-        span Game Card Generator β 1.0.6
+        span Game Card Generator β 1.0.7
       p.guideline 本サイトはファイナルファンタジーXIVのゲーム内で撮影したスクリーンショットをゲームカード風に加工する非公式画像ジェネレーターです。ご利用の際は「<a href="https://support.jp.square-enix.com/rule.php?id=5381&la=0&tag=authc" target="_blank">ファイナルファンタジーXIV 著作物利用許諾条件</a>」に同意した上、規約の範囲内にてご利用ください。
         | <br>
         | <br>
