@@ -174,7 +174,7 @@
         uploadedImageData: null,
         selectedTemplate: 0,
         designer:"",
-        color: "#000000",
+        color: "rgb(0,0,0)",
         params: [
           { x: 0, y:0, scale: 1, rotate: 0 },
           { x: 0, y:0, scale: 1, rotate: 0 },
