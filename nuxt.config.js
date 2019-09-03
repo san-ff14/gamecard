@@ -42,7 +42,10 @@ module.exports = {
       '~assets/stylus/mixins.styl',
       '~assets/stylus/extends.styl',
       '~assets/stylus/override.styl',
-    ]]
+    ]],
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-146950584-1'
+    }]
   ],
   workbox: {
     dev: true,

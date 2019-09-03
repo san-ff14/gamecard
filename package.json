@@ -21,6 +21,7 @@
   },
   "devDependencies": {
     "@nuxtjs/auth": "^4.8.1",
+    "@nuxtjs/google-analytics": "^2.2.0",
     "@vue/cli": "^3.7.0",
     "@vue/cli-service": "^3.7.0",
     "babel": "^6.23.0",
