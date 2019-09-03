@@ -1,17 +1,14 @@
 <template lang="pug">
   .container
-    
     header
       h1.site-title
-        span.ff14 FINAL FANTASY XIV
-        br
-        span Game Card Generator β 1.0.5
+        span Game Card Generator β 1.0.6
       p.guideline 本サイトはファイナルファンタジーXIVのゲーム内で撮影したスクリーンショットをゲームカード風に加工する非公式画像ジェネレーターです。ご利用の際は「<a href="https://support.jp.square-enix.com/rule.php?id=5381&la=0&tag=authc" target="_blank">ファイナルファンタジーXIV 著作物利用許諾条件</a>」に同意した上、規約の範囲内にてご利用ください。
         | <br>
         | <br>
         | <br>
-        | お知らせ<br>
-        | アクセスありがとうございます。想像以上にみなさんが楽しんんでくれており、本当に本当に嬉しく思います。あらためてみなさまにご協力のお願いです。本サイトはあくまで二次創作を楽しむための非公式ツールです。本ジェネレーターで作成した画像が一人歩きし公式へご迷惑がかかることがないよう、修正・対応を続けております。つきまして、現在は以下の対応をとっておりますのでご確認ください。
+        | <strong>お知らせとお願い</strong><br>
+        | アクセスありがとうございます。想像以上にみなさんが楽しんんでくれており、本当に本当に嬉しく思います。あらためてみなさまにご協力のお願いです。本サイトはあくまで二次創作を楽しむための非公式ツールです。本ジェネレーターで作成した画像が一人歩きして公式へご迷惑がかかることがないよう、修正・対応を続けております。つきまして、現在は以下の対応をとっておりますのでご確認ください。
         | <br>・本ジェネレーターはFF14のロゴマークを提供しない
         | <br>・非公式のものであることを表記する
         | <br>みなさんがデザインされたカード画像をTwitte等に掲載する際は改めて<a href="https://support.jp.square-enix.com/rule.php?id=5381&la=0&tag=authc" target="_blank">公式の利用許諾条件</a>をよくご確認した上でご利用ください。ご理解とご協力のほどよろしくお願いいたします。
@@ -29,6 +26,7 @@
             svgTemplate.svg(
               ref="svg"
               v-if="selectedTemplate==0"
+              :color="color"
               :image="uploadedImageData"
               :designer="designer"
               :offsetX="params[selectedTemplate].x"
@@ -38,6 +36,7 @@
             svgTemplate02.svg(
               ref="svg"
               v-if="selectedTemplate==1"
+              :color="color"
               :image="uploadedImageData"
               :designer="designer"
               :offsetX="params[selectedTemplate].x"
@@ -47,6 +46,7 @@
             svgTemplate03.svg(
               ref="svg"
               v-if="selectedTemplate==2"
+              :color="color"
               :image="uploadedImageData"
               :designer="designer"
               :offsetX="params[selectedTemplate].x"
@@ -56,6 +56,7 @@
             svgTemplate04.svg(
               ref="svg"
               v-if="selectedTemplate==3"
+              :color="color"
               :image="uploadedImageData"
               :designer="designer"
               :offsetX="params[selectedTemplate].x"
@@ -65,6 +66,7 @@
             svgTemplate05.svg(
               ref="svg"
               v-if="selectedTemplate==4"
+              :color="color"
               :image="uploadedImageData"
               :designer="designer"
               :offsetX="params[selectedTemplate].x"
@@ -74,6 +76,7 @@
             svgTemplate06.svg(
               ref="svg"
               v-if="selectedTemplate==5"
+              :color="color"
               :image="uploadedImageData"
               :designer="designer"
               :offsetX="params[selectedTemplate].x"
@@ -139,8 +142,16 @@
           .step
             h2.step-title 4. Signature
             .step-content
-              p Designed by 
-              p: input(v-model="designer")
+              p.label-designed-by Designed by, 
+              p: input.input-designed-by(v-model="designer")
+
+              p.input-color-label Copyright color is,
+              .input-colors
+                .input-color(
+                  v-for="n, i in 5"
+                  :class="{select: color==`rgb(${255/5*i},${255/5*i},${255/5*i})`}"
+                  @click="color=`rgb(${255/5*i},${255/5*i},${255/5*i})`")
+                  .inner(:style="{'background-color': `rgb(${255/5*i},${255/5*i},${255/5*i})`}")
           
           .step
             h2.step-title 5. Save Image
@@ -163,6 +174,7 @@
         uploadedImageData: null,
         selectedTemplate: 0,
         designer:"",
+        color: "#000000",
         params: [
           { x: 0, y:0, scale: 1, rotate: 0 },
           { x: 0, y:0, scale: 1, rotate: 0 },
@@ -200,24 +212,25 @@
         this.downloadPNG(svg)
       },
       downloadPNG(svg){
-        const svgData = new XMLSerializer().serializeToString(svg)
-        const canvas = document.createElement("canvas")
-        canvas.width = svg.width.baseVal.value
-        canvas.height = svg.height.baseVal.value
-        canvg(canvas, svgData, {
-          renderCallback(){
-            if(canvas.msToBlob){
-              var blob = canvas.msToBlob()
-              window.navigator.msSaveBlob(blob, "my_gamecard.png")
-            }else{
-              var a = document.createElement("a")
-              a.href = canvas.toDataURL("image/png")
-              a.setAttribute("download", "my_gamecard.png")
-              // a.dispatchEvent(new CustomEvent("click"))
-              a.click()
+        this.$nextTick(()=>{
+          const svgData = new XMLSerializer().serializeToString(svg)
+          const canvas = document.createElement("canvas")
+          canvas.width = svg.width.baseVal.value
+          canvas.height = svg.height.baseVal.value
+          canvg(canvas, svgData, {
+            renderCallback:()=>{
+              if(canvas.msToBlob){
+                var blob = canvas.msToBlob()
+                window.navigator.msSaveBlob(blob, "my_gamecard.png")
+              }else{
+                var a = document.createElement("a")
+                a.href = canvas.toDataURL("image/png")
+                a.setAttribute("download", "my_gamecard.png")
+                // a.dispatchEvent(new CustomEvent("click"))
+                a.click()
+              }
             }
-            
-          }
+          })
         })
       },
       downloadSVG(svg){
@@ -303,6 +316,8 @@
     text-align justify
     a
       text-decoration underline
+    strong
+      font-weight bold
   .copy-right
     position fixed
     line-height 1.4em
@@ -345,9 +360,6 @@
       width 100%
       height 100%
       max-height 80vh
-      & >>> #bg
-        background-color #fff
-        box-shadow 0 0 20px #000
   
   .input-parameters
     background-color #fff
@@ -413,9 +425,9 @@
     &:disabled
       opacity .2
     
-  .step
-    &:not(:last-child)
-      margin-bottom 20px
+  // .step
+  //   &:not(:last-child)
+  //     margin-bottom 20px
   .step-title
     font-size 12px
     font-weight 400
@@ -514,4 +526,55 @@
         margin-bottom 2px
       &:last-child
         border-radius 0 0 10px 10px
+  
+  .label-designed-by
+    font-size 14px
+    line-height 1em
+    margin-bottom 5px
+    color #000
+  .input-designed-by
+    padding 3px 5px
+    width 100%
+    height 40px
+    outline none
+    border 1px solid #ddd
+    &:focus
+      border-color #000
+  .input-color-label
+    margin-top 20px
+    font-size 14px
+    line-height 1em
+    margin-bottom 5px
+    color #000
+  .input-colors
+    display flex
+    width 100%
+    .input-color
+      animate(0.15s)
+      position relative
+      height 40px
+      flex-grow 1
+      border 2px solid transparent
+      noSelect()
+      cursor pointer
+      // padding 4px
+      display flex
+      align-items center
+      .inner
+        animate(0.15s)
+        width 100%
+        height 10px
+        display flex
+        align-items center
+        font-size 14px
+        line-height 1.2em
+        border 2px solid transparent
+      &:hover
+        .inner
+          height 30px
+      &.select
+        border-color #000
+        .inner
+          height 100%
+          border-color white
 </style>

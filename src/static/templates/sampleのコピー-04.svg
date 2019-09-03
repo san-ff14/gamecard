@@ -1,7 +1,107 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="レイヤー_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-	 y="0px" width="722.26px" height="490.33px" viewBox="0 0 722.26 490.33" enable-background="new 0 0 722.26 490.33"
+	 y="0px" viewBox="0 0 710.79 461.97" enable-background="new 0 0 710.79 461.97"
 	 xml:space="preserve">
-<text transform="matrix(1 0 0 1 -20.9045 474.68)"><tspan x="0" y="0" font-family="'MyriadPro-Regular'" font-size="10px">C</tspan><tspan x="6.19" y="0" font-family="'MyriadPro-Regular'" font-size="10px">o</tspan><tspan x="12.18" y="0" font-family="'MyriadPro-Regular'" font-size="10px">p</tspan><tspan x="18.3" y="0" font-family="'MyriadPro-Regular'" font-size="10px">y</tspan><tspan x="23.51" y="0" font-family="'MyriadPro-Regular'" font-size="10px">r</tspan><tspan x="27.32" y="0" font-family="'MyriadPro-Regular'" font-size="10px">ig</tspan><tspan x="36.25" y="0" font-family="'MyriadPro-Regular'" font-size="10px">h</tspan><tspan x="42.26" y="0" font-family="'MyriadPro-Regular'" font-size="10px">t </tspan><tspan x="48.69" y="0" font-family="'MyriadPro-Regular'" font-size="10px">(</tspan><tspan x="51.91" y="0" font-family="'MyriadPro-Regular'" font-size="10px">C</tspan><tspan x="58.38" y="0" font-family="'MyriadPro-Regular'" font-size="10px">) 2010 - 2019 SQ</tspan><tspan x="133.63" y="0" font-family="'MyriadPro-Regular'" font-size="10px">U</tspan><tspan x="140.26" y="0" font-family="'MyriadPro-Regular'" font-size="10px">ARE ENIX </tspan><tspan x="185.02" y="0" font-family="'MyriadPro-Regular'" font-size="10px">C</tspan><tspan x="191.11" y="0" font-family="'MyriadPro-Regular'" font-size="10px">O</tspan><tspan x="198.16" y="0" font-family="'MyriadPro-Regular'" font-size="10px">., </tspan><tspan x="205.92" y="0" font-family="'MyriadPro-Regular'" font-size="10px">L</tspan><tspan x="210.26" y="0" font-family="'MyriadPro-Regular'" font-size="10px">T</tspan><tspan x="215.73" y="0" font-family="'MyriadPro-Regular'" font-size="10px">D</tspan><tspan x="222.55" y="0" font-family="'MyriadPro-Regular'" font-size="10px">. </tspan><tspan x="227.74" y="0" font-family="'MyriadPro-Regular'" font-size="10px">A</tspan><tspan x="234.33" y="0" font-family="'MyriadPro-Regular'" font-size="10px">ll </tspan><tspan x="242.67" y="0" font-family="'MyriadPro-Regular'" font-size="10px">R</tspan><tspan x="248.65" y="0" font-family="'MyriadPro-Regular'" font-size="10px">ig</tspan><tspan x="257.58" y="0" font-family="'MyriadPro-Regular'" font-size="10px">h</tspan><tspan x="263.59" y="0" font-family="'MyriadPro-Regular'" font-size="10px">ts </tspan><tspan x="274.48" y="0" font-family="'MyriadPro-Regular'" font-size="10px">R</tspan><tspan x="280.4" y="0" font-family="'MyriadPro-Regular'" font-size="10px">ese</tspan><tspan x="295.88" y="0" font-family="'MyriadPro-Regular'" font-size="10px">r</tspan><tspan x="299.9" y="0" font-family="'MyriadPro-Regular'" font-size="10px">v</tspan><tspan x="305.11" y="0" font-family="'MyriadPro-Regular'" font-size="10px">e</tspan><tspan x="310.62" y="0" font-family="'MyriadPro-Regular'" font-size="10px">d</tspan><tspan x="316.66" y="0" font-family="'MyriadPro-Regular'" font-size="10px">.</tspan></text>
+<g>
+		<image overflow="visible" opacity="0.8" width="964" height="554" xlink:href="templates/B799ED7968458232.png"  transform="matrix(1 0 0 1 -125.6409 -48.8318)">
+	</image>
+	<g>
+		<g>
+			<defs>
+				<path id="card_25_" d="M674.36,436.95h-640c-11.05,0-20-8.95-20-20V29.97c0-11.05,8.95-20,20-20h640c11.05,0,20,8.95,20,20
+					v386.98C694.36,428,685.4,436.95,674.36,436.95z"/>
+			</defs>
+			<clipPath id="card_3_">
+				<use xlink:href="#card_25_"  overflow="visible"/>
+			</clipPath>
+			<g clip-path="url(#card_3_)">
+				<g :transform="computedTranfrom">
+					<image overflow="visible" width="3840" height="2160" :xlink:href="image"  transform="matrix(0.2446 0 0 0.2446 -117.2187 -40.0251)">
+					</image>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+<g id="card_8_" opacity="0.9">
+	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="83.296" y1="-47.5998" x2="625.4222" y2="494.5264">
+		<stop  offset="0" style="stop-color:#FFFFFF"/>
+		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+	</linearGradient>
+	<path fill="none" stroke="url(#SVGID_1_)" stroke-width="0.5" stroke-miterlimit="10" d="M674.36,436.95h-640
+		c-11.05,0-20-8.95-20-20V29.97c0-11.05,8.95-20,20-20h640c11.05,0,20,8.95,20,20v386.98C694.36,428,685.4,436.95,674.36,436.95z"/>
+</g>
+<g>
+	
+		<image overflow="visible" opacity="0.7" width="92" height="29" xlink:href="templates/B799ED7968458230.png"  transform="matrix(1 0 0 1 503.8979 32.4329)">
+	</image>
+	<g>
+		
+			<image overflow="visible" opacity="0.6" width="80" height="18" xlink:href="templates/B799ED7968458231.png"  transform="matrix(1 0 0 1 510.4979 38.0329)">
+		</image>
+		<g>
+			<g>
+				<path d="M517.71,46.73c1.08,0.26,1.95,1.14,1.95,2.44c0,1.66-1.38,3-3.72,3c-1.08,0-2.03-0.26-2.54-0.57l0.48-1.73
+					c0.38,0.23,1.16,0.51,1.86,0.51c1.01,0,1.59-0.58,1.59-1.33c0-0.99-0.88-1.43-1.83-1.43h-0.65v-1.6h0.58
+					c0.73,0,1.62-0.35,1.62-1.18c0-0.6-0.43-1.03-1.25-1.03c-0.64,0-1.27,0.26-1.65,0.48l-0.44-1.64c0.52-0.33,1.57-0.65,2.65-0.65
+					c1.95,0,2.99,1.12,2.99,2.44c0,1.01-0.61,1.83-1.65,2.25V46.73z"/>
+				<path d="M521.02,47.12c0-2.78,1.03-5.11,3.39-5.11c2.55,0,3.32,2.59,3.32,5.04c0,3.22-1.25,5.12-3.35,5.12
+					C521.85,52.18,521.02,49.6,521.02,47.12z M525.44,47.09c0-2.12-0.33-3.26-1.04-3.26c-0.68,0-1.09,1.01-1.09,3.26
+					s0.38,3.26,1.09,3.26C524.95,50.36,525.44,49.79,525.44,47.09z"/>
+				<path d="M530.31,41.95h8.38v10.58h-1.88v-0.79h-4.7v0.79h-1.8V41.95z M536.81,43.72h-4.7v2.24h4.7V43.72z M532.11,49.98h4.7
+					v-2.29h-4.7V49.98z"/>
+				<path d="M547.82,46.45v0.49c0.6,0.43,1.73,1.36,2.01,1.61l-0.98,1.51c-0.26-0.35-0.65-0.79-1.03-1.21v3.83h-1.7v-3.77
+					c-0.46,0.9-0.98,1.74-1.54,2.34c-0.17-0.52-0.59-1.26-0.88-1.73c0.79-0.77,1.56-1.97,2.06-3.07h-1.78v-1.61h2.12v-1.16
+					c-0.59,0.14-1.17,0.26-1.75,0.36c-0.08-0.38-0.34-0.98-0.53-1.33c1.63-0.32,3.37-0.85,4.46-1.43l1.43,1.31
+					c-0.07,0.07-0.17,0.07-0.36,0.07c-0.44,0.2-0.97,0.4-1.55,0.56v1.62h1.96v1.61H547.82z M552.3,42.86
+					c-0.01,0.13-0.11,0.22-0.35,0.25v6.5h-1.69v-6.86L552.3,42.86z M553.04,41.53l2.09,0.1c-0.01,0.13-0.1,0.23-0.36,0.26v8.73
+					c0,1.62-0.47,2.06-3.26,2.06c-0.07-0.5-0.35-1.32-0.6-1.81c0.76,0.04,1.55,0.04,1.81,0.04c0.23,0,0.32-0.07,0.32-0.3V41.53z"/>
+				<path d="M566.65,42.06v8.66c0,1.55-0.6,1.91-3.07,1.88c-0.06-0.47-0.32-1.22-0.55-1.67c0.4,0.04,0.86,0.04,1.21,0.04
+					c0.6,0,0.67,0,0.67-0.28v-1.44h-2.23v3.21h-1.7v-3.21h-2.12c-0.23,1.31-0.68,2.59-1.52,3.5c-0.28-0.34-1-0.92-1.38-1.14
+					c1.31-1.43,1.4-3.59,1.4-5.28v-4.28H566.65z M559.08,46.45c0,0.36-0.01,0.75-0.04,1.16h1.93v-1.16H559.08z M560.98,43.72h-1.89
+					v1.12h1.89V43.72z M564.91,44.83v-1.12h-2.23v1.12H564.91z M562.68,47.61h2.23v-1.16h-2.23V47.61z"/>
+				<path d="M579.31,47.05h-1.76c0.56,0.55,1.23,1.01,2,1.33c-0.38,0.32-0.9,0.98-1.15,1.43c-0.43-0.2-0.83-0.46-1.19-0.73
+					c-0.23,3.17-0.46,3.62-2.6,3.62c-0.18,0-0.37,0-0.56-0.01c-0.04-0.5-0.23-1.19-0.5-1.63c0.46,0.05,0.91,0.06,1.14,0.06
+					c0.18,0,0.3-0.02,0.42-0.14c0.13-0.13,0.24-0.56,0.31-1.46h-1.54c-0.34,1.4-1.01,2.54-3.74,3.21c-0.16-0.44-0.6-1.14-0.95-1.49
+					c1.91-0.37,2.58-0.94,2.85-1.73h-1.61v-0.56c-0.41,0.3-0.85,0.58-1.33,0.82c-0.23-0.41-0.77-1.05-1.08-1.4
+					c0.76-0.33,1.4-0.79,1.96-1.31h-1.68v-1.57h2.92c0.14-0.24,0.28-0.48,0.4-0.73h-2.45v-1.52h1.08c-0.14-0.42-0.4-0.94-0.62-1.34
+					l1.44-0.52c0.34,0.5,0.68,1.18,0.83,1.63l-0.62,0.23h0.95c0.2-0.65,0.36-1.32,0.47-1.98l2.09,0.42
+					c-0.04,0.12-0.16,0.2-0.36,0.22c-0.1,0.44-0.22,0.9-0.34,1.34h1.68l-0.43-0.17c0.3-0.48,0.65-1.21,0.83-1.76l1.87,0.66
+					c-0.05,0.1-0.18,0.14-0.36,0.14c-0.16,0.34-0.4,0.75-0.62,1.13h1.54v1.52h-2.59c0.11,0.25,0.23,0.49,0.37,0.73h2.96V47.05z
+					 M576.02,47.94c-0.24-0.28-0.46-0.58-0.66-0.89h-3.08c-0.22,0.31-0.47,0.61-0.73,0.9h4.38L576.02,47.94z M574.55,45.48
+					c-0.11-0.24-0.2-0.48-0.3-0.73h-0.71l-0.32,0.73H574.55z"/>
+				<path d="M584.23,52.09h-1.37l3-9.96h1.37L584.23,52.09z"/>
+			</g>
+		</g>
+	</g>
+</g>
+<g>
+	
+		<image overflow="visible" opacity="0.7" width="92" height="39" xlink:href="templates/B799ED796845820E.png"  transform="matrix(1 0 0 1 582.8979 25.4329)">
+	</image>
+	<g>
+		
+			<image overflow="visible" opacity="0.6" width="79" height="27" xlink:href="templates/B799ED796845820F.png"  transform="matrix(1 0 0 1 589.4979 31.0329)">
+		</image>
+		<g>
+			<g>
+				<path d="M596.97,52.35v-3.49h-4.45v-2.57h4.45v-0.75l-0.44-0.95h-3.98l-0.03-2.57h3.21l-3.29-7.45h4.11l2.62,7.73h0.05l2.7-7.73
+					h4.03l-3.26,7.45h2.67v2.57h-3.98l-0.44,0.95v0.75h4.42v2.57h-4.42v3.49H596.97z"/>
+				<path d="M607.81,37.16c1.59-0.67,3.11-1.57,4.47-2.59h3.6v17.78h-3.86V38.42c-1.31,0.92-2.72,1.7-4.21,2.29V37.16z"/>
+				<path d="M619.04,48.93h3.8l-3.06,6.3h-2.65L619.04,48.93z"/>
+				<path d="M633.07,38.86c-0.03-0.75-0.26-1.29-0.59-1.62c-0.36-0.33-0.85-0.49-1.46-0.49c-2.31,0-2.52,3.8-2.52,5.37
+					c0.9-0.98,2.03-1.31,3.34-1.31c3.31,0,5.47,2.29,5.47,5.5c0,1.85-0.59,3.37-1.44,4.32c-0.93,1.05-2.98,2.11-5.17,2.11
+					c-4.19,0-6.19-2.6-6.19-7.76c0-5.04,0.72-10.79,6.96-10.79c2.9,0,5.42,1.57,5.4,4.68H633.07z M630.91,43.38
+					c-1.67,0-2.42,1.9-2.42,3.31c0,1.46,0.62,3.47,2.42,3.47c1.77,0,2.42-1.95,2.42-3.47C633.33,45.13,632.74,43.38,630.91,43.38z"
+					/>
+				<path d="M638.75,48.73c1.62-1.77,8.61-6.96,8.61-9.64c0-1.29-0.9-2.34-2.18-2.34c-1.44,0-2.24,1.44-2.24,2.75h-3.93
+					c-0.13-3.67,2.77-5.32,6.09-5.32c3.11,0,6.12,1.46,6.12,4.99c0,4.39-6.09,7.76-8.61,10.61h0.05h8.69v2.57h-12.59V48.73z"/>
+				<path d="M656.71,42.92c-2.13-0.57-3.44-1.77-3.44-4.06c0-2.93,3.31-4.68,6.19-4.68c2.85,0,6.14,1.31,6.14,4.68
+					c0,2.06-1.59,3.75-3.52,4.03v-0.03v0.05c2.24,0.51,3.78,2.21,3.78,4.52c0,3.29-3.26,5.29-6.4,5.29c-3.21,0-6.45-1.67-6.45-5.29
+					c0-2.34,1.72-3.93,3.7-4.47V42.92z M659.64,41.48c1.28,0,2.36-0.9,2.36-2.34c0-1.44-1.08-2.39-2.72-2.39
+					c-1.28,0-2.42,0.95-2.42,2.39C656.87,40.58,658,41.48,659.64,41.48z M659.51,50.17c1.41,0,2.49-1.18,2.49-2.8
+					c0-1.62-0.98-2.8-2.57-2.8c-1.39,0-2.57,1.08-2.57,2.8C656.87,48.96,657.82,50.17,659.51,50.17z"/>
+			</g>
+		</g>
+	</g>
+</g>
 </svg>
