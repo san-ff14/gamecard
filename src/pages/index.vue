@@ -5,8 +5,21 @@
       h1.site-title
         span.ff14 FINAL FANTASY XIV
         br
-        span Game Card Generator β 1.0.4
+        span Game Card Generator β 1.0.5
       p.guideline 本サイトはファイナルファンタジーXIVのゲーム内で撮影したスクリーンショットをゲームカード風に加工する非公式画像ジェネレーターです。ご利用の際は「<a href="https://support.jp.square-enix.com/rule.php?id=5381&la=0&tag=authc" target="_blank">ファイナルファンタジーXIV 著作物利用許諾条件</a>」に同意した上、規約の範囲内にてご利用ください。
+        | <br>
+        | <br>
+        | <br>
+        | お知らせ<br>
+        | アクセスありがとうございます。想像以上にみなさんが楽しんんでくれており、本当にとても嬉しく思います。あらためてみなさまにご協力のお願いです。本サイトはあくまで二次創作を楽しむための非公式ツールです。本ジェネレーターで作成した画像が一人歩きし公式へご迷惑がかかることがないよう、修正・対応を続けております。つきまして、現在は以下の対応をとっておりますのでご確認ください。
+        | <br>・本ジェネレーターはFF14のロゴマークを提供しない
+        | <br>・非公式のものであることを表記する
+        | <br>みなさんがデザインされたカード画像をTwitte等に掲載する際は改めて<a href="https://support.jp.square-enix.com/rule.php?id=5381&la=0&tag=authc" target="_blank">公式の利用許諾条件</a>をよくご確認した上でご利用ください。ご理解とご協力のほどよろしくお願いいたします。
+        | <br>
+        | <br>
+        | 動作確認環境<br>
+        | Mac OS / Safari, Chrome<br>
+        | Windows10 / Edge, Chrome
     p.copy-right 記載されている会社名・製品名・システム名などは、各社の商標、または登録商標です。<br>Copyright (C) 2010 - 2019 SQUARE ENIX CO., LTD. All Rights Reserved.
 
     main
@@ -17,6 +30,7 @@
               ref="svg"
               v-if="selectedTemplate==0"
               :image="uploadedImageData"
+              :designer="designer"
               :offsetX="params[selectedTemplate].x"
               :offsetY="params[selectedTemplate].y"
               :scale="params[selectedTemplate].scale"
@@ -25,6 +39,7 @@
               ref="svg"
               v-if="selectedTemplate==1"
               :image="uploadedImageData"
+              :designer="designer"
               :offsetX="params[selectedTemplate].x"
               :offsetY="params[selectedTemplate].y"
               :scale="params[selectedTemplate].scale"
@@ -33,6 +48,7 @@
               ref="svg"
               v-if="selectedTemplate==2"
               :image="uploadedImageData"
+              :designer="designer"
               :offsetX="params[selectedTemplate].x"
               :offsetY="params[selectedTemplate].y"
               :scale="params[selectedTemplate].scale"
@@ -41,6 +57,7 @@
               ref="svg"
               v-if="selectedTemplate==3"
               :image="uploadedImageData"
+              :designer="designer"
               :offsetX="params[selectedTemplate].x"
               :offsetY="params[selectedTemplate].y"
               :scale="params[selectedTemplate].scale"
@@ -49,6 +66,7 @@
               ref="svg"
               v-if="selectedTemplate==4"
               :image="uploadedImageData"
+              :designer="designer"
               :offsetX="params[selectedTemplate].x"
               :offsetY="params[selectedTemplate].y"
               :scale="params[selectedTemplate].scale"
@@ -57,6 +75,7 @@
               ref="svg"
               v-if="selectedTemplate==5"
               :image="uploadedImageData"
+              :designer="designer"
               :offsetX="params[selectedTemplate].x"
               :offsetY="params[selectedTemplate].y"
               :scale="params[selectedTemplate].scale"
@@ -118,9 +137,15 @@
                
               
           .step
-            h2.step-title 4. Save Image
+            h2.step-title 4. Signature
             .step-content
-              button.button-download(:disabled="!uploadedImageData" @click="handleDrownload")
+              p Designed by 
+              p: input(v-model="designer")
+          
+          .step
+            h2.step-title 5. Save Image
+            .step-content
+              button.button-download(:disabled="uploadedImageData==null || !validSignature" @click="handleDrownload")
                 img.icon(src="icons/_ionicons_svg_ios-download.svg")
                 span Download
 </template>
@@ -137,6 +162,7 @@
         uploadFile: null,
         uploadedImageData: null,
         selectedTemplate: 0,
+        designer:"",
         params: [
           { x: 0, y:0, scale: 1, rotate: 0 },
           { x: 0, y:0, scale: 1, rotate: 0 },
@@ -148,6 +174,9 @@
       }
     },
     computed: {
+      validSignature(){
+        return this.designer!=null && this.designer.replace(/[ |　]/g, "").length>0
+      }
     },
     async mounted(){
     },
